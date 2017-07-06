@@ -1,0 +1,13 @@
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Application.deps.json
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Application.dll
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Application.pdb
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Domain.dll
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Infra.Data.dll
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Domain.pdb
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\bin\Debug\netstandard2.0\AspNetCore.Infra.Data.pdb
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.csprojResolveAssemblyReference.cache
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.csproj.CoreCompileInputs.cache
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.AssemblyInfoInputs.cache
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.AssemblyInfo.cs
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.dll
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Application\obj\Debug\netstandard2.0\AspNetCore.Application.pdb

@@ -1,15 +1,20 @@
-namespace CursoAspNetCore.Application.Interface.Repository
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Application.Interface
 {
-    public interface IAppRepository<TEntity> 
-    {
-         void Add(TEntity Entitie);
+	public interface IAppRepository<T> where T : class
+	{
+		void Add(T Entitie);
 
-        void Update(TEntity Entitie);
+		void Update(T Entitie);
 
-        void Delete(int Id);
+		void Delete(Guid Id);
 
-        List<TEntity> List();
+		List<T> List();
 
-        TEntity GetForId(int id);
-    }
+		T GetForId(Guid id);
+	}
 }

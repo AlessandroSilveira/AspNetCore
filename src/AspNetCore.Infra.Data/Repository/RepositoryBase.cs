@@ -25,7 +25,7 @@ namespace AspNetCore.Infra.Data.Repository {
             };
         }
 
-        public void Delete (int Id) {
+        public void Delete (Guid Id) {
             using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
                 var Objeto = banco.Set<TEntity> ().Find (Id);
                 banco.Remove (Objeto);
@@ -46,7 +46,7 @@ namespace AspNetCore.Infra.Data.Repository {
             };
         }
 
-        public TEntity GetForId (int id) {
+        public TEntity GetForId (Guid id) {
             using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
                 return banco.Set<TEntity> ().Find (id);
             };

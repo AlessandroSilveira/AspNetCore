@@ -11,10 +11,10 @@ namespace AspNetCore.Domain.Interface
 
         void Update(T Entitie);
 
-        void Delete(int Id);
+        void Delete(Guid Id);
 
         List<T> List();
 
-        T GetForId(int id);
+        T GetForId(Guid id);
     }
 }

@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCore.Domain\AspNetCore.Domain.csproj" />
+    <ProjectReference Include="..\AspNetCore.Infra.Data\AspNetCore.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,45 +6,45 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using AspNetCore.Domain.Interface;
+using AspNetCore.Infra.Data.Repository;
+using AspNetCore.Application.Interface;
+using AspNetCore.Application.App;
 
 namespace AspNetCore.Mvc
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public Startup(/*IConfiguration configuration*/IHostingEnvironment env)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-            Configuration = builder.Build();
-        }
+			//Configuration = configuration;
+			var builder = new ConfigurationBuilder()
+		   .SetBasePath(env.ContentRootPath)
+		   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+		   .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+		   .AddEnvironmentVariables();
+			Configuration = builder.Build();
+		}
 
-        public IConfigurationRoot Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
 
+            services.AddMvc();
 			services.AddSingleton(typeof(IRepository<>), typeof(RepositoryBase<>));
 
 			services.AddSingleton<IPessoa, PessoaRepository>();
 			services.AddSingleton<IEndereco, EnderecoRepository>();
 
-			services.AddSingleton<IPessoaAppRepository, AppPessoaRepository>();
-			services.AddSingleton<IEnderecoAppRepository, AppEnderecoRepository>();
+			services.AddSingleton<IPessoaAppRepository, PessoaAppRepository>();
+			services.AddSingleton<IEnderecoAppRepository, EnderecoAppRepository>();
 		}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
