@@ -37,7 +37,11 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
+<<<<<<< HEAD
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+=======
+      "sha512": "R5LSs40wL5gQO6ZsJSv7j8ErnCs+aeCw2ZG1u0Ia8rsYhugkZ2wzOOPMCWigErjGWVrUZsRiCFoyZ87Iuvsx2Q==",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -49,14 +53,24 @@
         "runtime.json"
       ]
     },
+<<<<<<< HEAD
+    "Microsoft.Packaging.Tools/1.0.0-preview2-25401-01": {
+      "sha512": "2YSuVbq63KLNLGBsQbsRP5W3G/BodJHJc58rS21QWsHJn+YlRF02Js7XdVJf27Mw4P4DzQj9QfmWDSzrT9yp7g==",
+=======
     "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
-      "sha512": "+4CYBmK8L7WiJqldB7li0W0XMpXX7rezevJeiPLSzyPR6ccv5Th3dzfLyNjd7FkX5V0SL5WTtrQB8Sb12RU6Mg==",
+      "sha512": "jEy24+i8sSiE+XiC8dqQJ6/Y4zFUtCmxKaqcJi5jVrUC9j3orkQkYmpSbYjfVc8nMmUTkHNTq80GexWRPKAsiw==",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
       "type": "package",
       "path": "microsoft.packaging.tools/1.0.0-preview1-25301-01",
       "files": [
+<<<<<<< HEAD
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+=======
         "ThirdPartyNotices.txt",
-        "Microsoft.Packaging.Tools.1.0.0-preview2-25401-01.nupkg.sha512",
-        "Microsoft.Packaging.Tools.nuspec",
+        "build/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/Microsoft.Extensions.DependencyModel.dll",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
         "build/Microsoft.Packaging.Tools.Tasks.dll",
         "build/Microsoft.Packaging.Tools.Trimming.targets",
         "build/Microsoft.Packaging.Tools.targets",
@@ -69,15 +83,31 @@
         "build/desktop/Newtonsoft.Json.dll",
         "build/desktop/System.Collections.Immutable.dll",
         "build/desktop/System.Reflection.Metadata.dll",
+<<<<<<< HEAD
+        "microsoft.packaging.tools.1.0.0-preview2-25401-01.nupkg.sha512",
+        "microsoft.packaging.tools.nuspec"
+      ]
+    },
+    "NETStandard.Library/2.0.0-preview2-25401-01": {
+      "sha512": "2yAyw+ZQLD66LQ9jgDasct7LMxnkGxeAhbryyJ4Ec0eE3nxVbP2I1oyrBf8API5rP6RUpLDNvFutkWcsqkNjJQ==",
+=======
+        "dotnet_library_license.txt",
+        "microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512",
         "microsoft.packaging.tools.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0-preview1-25301-01": {
-      "sha512": "2yAyw+ZQLD66LQ9jgDasct7LMxnkGxeAhbryyJ4Ec0eE3nxVbP2I1oyrBf8API5rP6RUpLDNvFutkWcsqkNjJQ==",
+      "sha512": "JvDD1Y97NJwpug3rAc9/08LiehY0HXtAoOgrVtN0bWr6tFOmhM2UiWQJdeckoeIsqXKpvnZURbxYyo9FgWOtmg==",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
       "type": "package",
       "path": "netstandard.library/2.0.0-preview1-25301-01",
       "files": [
+<<<<<<< HEAD
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+=======
         "ThirdPartyNotices.txt",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
@@ -193,7 +223,14 @@
         "build/netstandard2.0/ref/System.dll",
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
-        "lib/netstandard1.0/_._"
+<<<<<<< HEAD
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0-preview2-25401-01.nupkg.sha512",
+=======
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512",
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
         "netstandard.library.nuspec"
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETStandard,Version=v2.0": {
       "Microsoft.AspNetCore.Hosting.Abstractions/1.1.1": {
@@ -389,7 +389,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -398,13 +397,11 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Packaging.Tools/1.0.0-preview2-25401-01": {
         "type": "package",
         "build": {
           "build/Microsoft.Packaging.Tools.targets": {}
         }
       },
-      "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -415,11 +412,10 @@
           "ref/netstandard1.3/_._": {}
         }
       },
-      "NETStandard.Library/2.0.0-preview2-25401-01": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.Packaging.Tools": "1.0.0-preview2-25401-01"
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -430,7 +426,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
       "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "dependencies": {
@@ -2061,15 +2056,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "AspNetCore.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/AspNetCore.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AspNetCore.Domain.dll": {}
-        }
       },
       "AspNetCore.Infra.Data/1.0.0": {
         "type": "project",
@@ -2443,7 +2429,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "U0bZ3ljAFRYDGcfm87bNwFDW2V4RMmAenLHO3P5nWpLj3hwtiIZY4WBKkGUei7pPqBv3zad7amcs8VXlTnaVTQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -2455,8 +2441,6 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -2468,23 +2452,25 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Packaging.Tools/1.0.0-preview2-25401-01": {
-      "sha512": "2YSuVbq63KLNLGBsQbsRP5W3G/BodJHJc58rS21QWsHJn+YlRF02Js7XdVJf27Mw4P4DzQj9QfmWDSzrT9yp7g==",
+      "sha512": "+4CYBmK8L7WiJqldB7li0W0XMpXX7rezevJeiPLSzyPR6ccv5Th3dzfLyNjd7FkX5V0SL5WTtrQB8Sb12RU6Mg==",
       "type": "package",
-      "path": "microsoft.packaging.tools/1.0.0-preview2-25401-01",
+      "path": "microsoft.packaging.tools/1.0.0-preview1-25301-01",
       "files": [
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "Microsoft.Packaging.Tools.1.0.0-preview2-25401-01.nupkg.sha512",
+        "Microsoft.Packaging.Tools.nuspec",
         "build/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/Microsoft.Packaging.Tools.Trimming.targets",
         "build/Microsoft.Packaging.Tools.targets",
+        "build/Newtonsoft.Json.dll",
         "build/System.Collections.Immutable.dll",
         "build/System.Reflection.Metadata.dll",
+        "build/desktop/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/desktop/Microsoft.Extensions.DependencyModel.dll",
         "build/desktop/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/desktop/Newtonsoft.Json.dll",
         "build/desktop/System.Collections.Immutable.dll",
         "build/desktop/System.Reflection.Metadata.dll",
-        "microsoft.packaging.tools.1.0.0-preview2-25401-01.nupkg.sha512",
-        "microsoft.packaging.tools.nuspec"
-      ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "sha512": "9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
@@ -2522,13 +2508,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "NETStandard.Library/2.0.0-preview2-25401-01": {
-      "sha512": "2yAyw+ZQLD66LQ9jgDasct7LMxnkGxeAhbryyJ4Ec0eE3nxVbP2I1oyrBf8API5rP6RUpLDNvFutkWcsqkNjJQ==",
+    "NETStandard.Library/2.0.0-preview1-25301-01": {
+      "sha512": "U1eUza5T7LP5tAflCDO6R7sjZ7jf8aqDRyYJr47RaAf88O0tTwO2hODv0voMjxBN3Eq8lIS7oyYr5ZzKSoKzpQ==",
       "type": "package",
-      "path": "netstandard.library/2.0.0-preview2-25401-01",
+      "path": "netstandard.library/2.0.0-preview1-25301-01",
       "files": [
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
         "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
@@ -2644,10 +2629,7 @@
         "build/netstandard2.0/ref/System.dll",
         "build/netstandard2.0/ref/mscorlib.dll",
         "build/netstandard2.0/ref/netstandard.dll",
-        "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0-preview2-25401-01.nupkg.sha512",
-        "netstandard.library.nuspec"
-      ]
+        "lib/netstandard1.0/_._"
     },
     "Newtonsoft.Json/9.0.1": {
       "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
@@ -6475,11 +6457,8 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "AspNetCore.Domain/1.0.0": {
-      "type": "project",
-      "path": "../AspNetCore.Domain/AspNetCore.Domain.csproj",
-      "msbuildProject": "../AspNetCore.Domain/AspNetCore.Domain.csproj"
+      "path": "../src/AspNetCore.Domain/AspNetCore.Domain.csproj",
+      "msbuildProject": "../src/AspNetCore.Domain/AspNetCore.Domain.csproj"
     },
     "AspNetCore.Infra.Data/1.0.0": {
       "type": "project",
@@ -6489,52 +6468,32 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "AspNetCore.Domain >= 1.0.0",
+      "NETStandard.Library >= 2.0.0-preview1-25301-01"
       "AspNetCore.Infra.Data >= 1.0.0",
-      "NETStandard.Library >= 2.0.0-preview2-25401-01"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alessandro Silveira\\.nuget\\packages\\": {}
+    "C:\\Users\\alesi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Application\\AspNetCore.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\AspNetCore.Application\\AspNetCore.Application.csproj",
       "projectName": "AspNetCore.Application",
-      "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Application\\AspNetCore.Application.csproj",
-      "packagesPath": "C:\\Users\\Alessandro Silveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Application\\obj\\",
+      "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\AspNetCore.Application\\AspNetCore.Application.csproj",
+      "outputPath": "C:\\sources\\AspNetCore\\src\\AspNetCore.Application\\obj\\",
+      "outputPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\AspNetCore.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Alessandro Silveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Alessandro Silveira\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.org/api/v2/": {}
-      },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Domain\\AspNetCore.Domain.csproj": {
-              "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Domain\\AspNetCore.Domain.csproj"
+          "projectReferences": {}
             },
             "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj": {
               "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj"
-            }
-          }
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -6543,15 +6502,12 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0-preview2-25401-01",
-            "autoReferenced": true
+            "version": "2.0.0-preview1-25301-01"
           }
         },
         "imports": [
           "net461"
-        ],
-        "assetTargetFallback": true,
-        "warn": true
+        ]
       }
     }
   }

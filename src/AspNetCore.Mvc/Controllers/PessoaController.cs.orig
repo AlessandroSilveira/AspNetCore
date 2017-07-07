@@ -1,0 +1,173 @@
+<<<<<<< HEAD
+﻿using AspNetCore.Application.Interface;
+using AspNetCore.Mvc.Models;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Interface;
+using WebSite.Models;
+
+// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+
+namespace AspNetCore.Mvc.Controllers
+{
+	public class PessoaController : Controller
+	{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+		private readonly IPessoaAppRepository _iPessoaAppRepository;
+
+		public PessoaController(IPessoaAppRepository iPessoaAppRepository)
+		{
+			_iPessoaAppRepository = iPessoaAppRepository;
+		}
+
+		/// <summary>
+		/// Listagem 
+		/// </summary>
+		/// <returns></returns>
+		public IActionResult Index()
+		{
+			ViewData["Title"] = "Lista de Produto";
+
+			var Lista = _iPessoaAppRepository.List();
+			var Retorno = new List<PessoaModel>();
+			foreach (var item in Lista)
+			{
+<<<<<<< HEAD
+				Retorno.Add(new PessoaModel { PessoaId = item.PessoaId, Nome = item.Nome });
+			}
+			return View(Retorno);
+		}
+		
+=======
+				Retorno.Add(new Models.PessoaModel { PessoaId = item.PessoaId, Nome = item.Nome });
+			}
+			return View(Retorno);
+		}
+
+
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
+		[HttpGet]
+		public IActionResult Create()
+		{
+			ViewData["Title"] = "Novo Pessoa";
+			return View(new PessoaModel());
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="produto"></param>
+		/// <returns></returns>
+		[HttpPost]
+<<<<<<< HEAD
+		public IActionResult Create(PessoaModel pessoa)
+		{
+			ViewData["Title"] = "Novo Pessoa";
+			_iPessoaAppRepository.Add(new Domain.Entities.Pessoa { Nome = pessoa.Nome });
+=======
+		public IActionResult Create(PessoaModel produto)
+		{
+			ViewData["Title"] = "Novo Pessoa";
+			_iPessoaAppRepository.Add(new Entities.Pessoa { Nome = pessoa.Nome });
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+
+			return RedirectToAction("Index");
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		[HttpGet]
+<<<<<<< HEAD
+		public IActionResult Edit(Guid id)
+=======
+		public IActionResult Edit(int Pessoaid)
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+		{
+			ViewData["Title"] = "Editar Pessoa";
+			var pessoa = _iPessoaAppRepository.GetForId(id);
+
+			return View(new PessoaModel { PessoaId = pessoa.PessoaId, Nome = pessoa.Nome });
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="produto"></param>
+		/// <returns></returns>
+		[HttpPost]
+<<<<<<< HEAD
+		public IActionResult Edit(PessoaModel pessoa)
+		{
+			ViewData["Title"] = "Editar Pessoa";
+			var pessoadados = _iPessoaAppRepository.GetForId(pessoa.PessoaId);
+			pessoadados.Nome = pessoa.Nome;
+			_iPessoaAppRepository.Update(pessoadados);
+=======
+		public IActionResult Edit(PessoaModel produto)
+		{
+			ViewData["Title"] = "Editar Pessoa";
+			var pessoa = _iPessoaAppRepository.GetForId(produto.Id);
+			pessoa.Nome = pessoa.Nome;
+			_iPessoaAppRepository.Update(pessoa);
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+			return RedirectToAction("Index");
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+<<<<<<< HEAD
+		/// <param name="id"></param>id
+		/// <returns></returns>
+		[HttpGet]
+		public IActionResult Delete(Guid id)
+=======
+		/// <param name="id"></param>
+		/// <returns></returns>
+		[HttpGet]
+		public IActionResult Delete(int id)
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+		{
+			ViewData["Title"] = "Exclusão de Pessoa";
+			var pessoa = _iPessoaAppRepository.GetForId(id);
+
+<<<<<<< HEAD
+			return View(new PessoaModel { PessoaId = pessoa.PessoaId, Nome = pessoa.Nome });
+=======
+			return View(new PessoaModel { Id = pessoa.PessoaId, Nome = pessoa.Nome });
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="produto"></param>
+		/// <returns></returns>
+		[HttpPost]
+		public IActionResult Delete(PessoaModel pessoa)
+		{
+			ViewData["Title"] = "Exclusão de Pessoa";
+			_iPessoaAppRepository.Delete(pessoa.PessoaId);
+			return RedirectToAction("Index");
+		}
+
+	}
+}

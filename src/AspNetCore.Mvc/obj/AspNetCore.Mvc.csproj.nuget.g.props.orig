@@ -3,8 +3,11 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\obj\project.assets.json</ProjectAssetsFile>
+<<<<<<< HEAD
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\aspnetcore.mvc\obj\project.assets.json</ProjectAssetsFile>
+=======
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\sources\AspNetCore\src\AspNetCore.Mvc\obj\project.assets.json</ProjectAssetsFile>
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\alesi\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
@@ -14,6 +17,10 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
     <Import Project="$(NuGetPackageRoot)microsoft.netcore.app\2.0.0-preview2-25407-01\build\netcoreapp2.0\Microsoft.NETCore.App.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.app\2.0.0-preview2-25407-01\build\netcoreapp2.0\Microsoft.NETCore.App.props')" />
+=======
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.app\2.0.0-preview1-002111-00\build\netcoreapp2.0\Microsoft.NETCore.App.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.app\2.0.0-preview1-002111-00\build\netcoreapp2.0\Microsoft.NETCore.App.props')" />
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
   </ImportGroup>
 </Project>

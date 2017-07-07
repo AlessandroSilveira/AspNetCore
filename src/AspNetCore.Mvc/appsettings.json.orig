@@ -1,0 +1,27 @@
+﻿{
+	"Logging": {
+		"IncludeScopes": false,
+<<<<<<< HEAD
+		"Debug": {
+			"LogLevel": {
+				"Default": "Warning"
+			}
+		},
+		"Console": {
+			"LogLevel": {
+				"Default": "Warning"
+			}
+		},
+			"ConnectionStrings": {
+				"DefaultConnection": "data source=.\\SQLEXPRESS;Initial Catalog=AspNetCore;Integrated Security=True;MultipleActiveResultSets=True;User=sa;Password=aspnetcore"
+			}
+=======
+		"LogLevel": {
+			"Default": "Warning"
+		}
+	},
+	"ConnectionString": {
+		"DefaultConnection": "data source=.\\SQLEXPRESS;Initial Catalog=AspNetCore;Integrated Security=True;MultipleActiveResultSets=True"
+>>>>>>> 6f502631e1d3e59487f5e85612c629a23a59c0fc
+	}
+}
