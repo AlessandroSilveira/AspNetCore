@@ -1,0 +1,21 @@
+C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=AspNetCore.Mvc
+--content-root=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Endereco\Create.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Endereco\Delete.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Endereco\Edit.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Endereco\Index.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Home\About.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Home\Contact.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Home\Index.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Pessoa\Create.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Pessoa\Delete.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Pessoa\Edit.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Pessoa\Index.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Shared\Error.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Shared\Layout.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Shared\_Layout.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\_ViewImports.cshtml
+--file=C:\Users\Alessandro Silveira\Source\Repos\AspNetCore\src\AspNetCore.Mvc\Views\_ViewStart.cshtml

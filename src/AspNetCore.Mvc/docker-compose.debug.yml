@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  aspnetcore.mvc:
+    image: aspnetcore.mvc:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "500:500"
+    environment:
+      - REMOTE_DEBUGGING

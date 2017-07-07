@@ -6480,9 +6480,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj",
       "projectName": "AspNetCore.Infra.Data",
@@ -6521,11 +6518,17 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration.FileExtensions": {
+          "NETStandard.Library": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0.0-preview2-25401-01",
+            "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.Extensions.Configuration.Json": {
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "1.1.2"
           },
@@ -6533,21 +6536,15 @@
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
           "Microsoft.Extensions.Configuration.Abstractions": {
             "target": "Package",
             "version": "1.1.2"
           },
-          "NETStandard.Library": {
-            "suppressParent": "All",
+          "Microsoft.Extensions.Configuration.FileExtensions": {
             "target": "Package",
-            "version": "2.0.0-preview2-25401-01",
-            "autoReferenced": true
+            "version": "1.1.2"
           },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
+          "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "1.1.2"
           }

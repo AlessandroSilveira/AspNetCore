@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  aspnetcore.mvc:
-    image: aspnetcore.mvc
-    build:
-      context: ./src/AspNetCore.Mvc
-      dockerfile: Dockerfile

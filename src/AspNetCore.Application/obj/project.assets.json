@@ -6499,9 +6499,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Application\\AspNetCore.Application.csproj",
       "projectName": "AspNetCore.Application",
@@ -6525,11 +6522,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj"
-            },
             "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Domain\\AspNetCore.Domain.csproj": {
               "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Domain\\AspNetCore.Domain.csproj"
+            },
+            "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\Alessandro Silveira\\Source\\Repos\\AspNetCore\\src\\AspNetCore.Infra.Data\\AspNetCore.Infra.Data.csproj"
             }
           }
         }
