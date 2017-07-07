@@ -1,55 +1,54 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using AspNetCore.Domain.Interface;
 using AspNetCore.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace AspNetCore.Infra.Data.Repository {
     public class RepositoryBase<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class {
-        private DbContextOptionsBuilder<AspNetCoreContext> _OptionsBuilder;
+        private readonly DbContextOptionsBuilder<AspNetCoreContext> _optionsBuilder;
 
         public RepositoryBase () {
-                _OptionsBuilder = new DbContextOptionsBuilder<AspNetCoreContext> ();
+                _optionsBuilder = new DbContextOptionsBuilder<AspNetCoreContext> ();
             }
 
             ~RepositoryBase () {
                 Dispose (false);
             }
 
-        public void Add (TEntity Entitie) {
-            using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
-                banco.Add (Entitie);
+        public void Add (TEntity entitie) {
+            using (var banco = new AspNetCoreContext(_optionsBuilder.Options)) {
+                banco.Add (entitie);
                 banco.SaveChanges ();
-            };
+            }
         }
 
-        public void Delete (Guid Id) {
-            using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
-                var Objeto = banco.Set<TEntity> ().Find (Id);
-                banco.Remove (Objeto);
+        public void Delete (Guid id) {
+            using (var banco = new AspNetCoreContext(_optionsBuilder.Options)) {
+                var objeto = banco.Set<TEntity> ().Find (id);
+                banco.Remove (objeto);
                 banco.SaveChanges ();
-            };
+            }
         }
 
         public List<TEntity> List () {
-            using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
+            using (var banco = new AspNetCoreContext(_optionsBuilder.Options)) {
                 return banco.Set<TEntity> ().ToList ();
-            };
+            }
         }
 
-        public void Update (TEntity Entitie) {
-            using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
-                banco.Update (Entitie);
+        public void Update (TEntity entitie) {
+            using (var banco = new AspNetCoreContext(_optionsBuilder.Options)) {
+                banco.Update (entitie);
                 banco.SaveChanges ();
-            };
+            }
         }
 
         public TEntity GetForId (Guid id) {
-            using (var banco = new AspNetCoreContext(_OptionsBuilder.Options)) {
+            using (var banco = new AspNetCoreContext(_optionsBuilder.Options)) {
                 return banco.Set<TEntity> ().Find (id);
-            };
+            }
         }
 
         public void Dispose () {
@@ -57,9 +56,11 @@ namespace AspNetCore.Infra.Data.Repository {
             GC.SuppressFinalize (this);
         }
 
-        private void Dispose (bool Status) {
-            if (!Status) return;
-        }
+        private static void Dispose (bool status) {
+            if (!status)
+			{
+			}
+		}
 
     }
 }

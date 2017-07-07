@@ -27,7 +27,9 @@ namespace AspNetCore.Infra.Data.Context
 			   .Build();
 
 			// define the database to use
-			optionBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
-		}		
+			
+			//optionBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+			optionBuilder.UseSqlServer("data source=.\\SQLEXPRESS;Initial Catalog=AspNetCore;Integrated Security=True;MultipleActiveResultSets=True");
+		}
 	}
 }
